@@ -1,12 +1,13 @@
 //import { useState } from 'react'
 import './App.css'
+import Nav from './Components/Nav'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <h2>Hello Dev</h2>
+      <Nav></Nav>
 
 
     </>
