@@ -13,7 +13,7 @@ function Banner() {
                     </span>
                 </h2>
 
-                <p className="mt-10 mb-14 max-w-lg text-lg  text-gray-600">
+                <p className="mt-10 mb-14 max-w-lg text-lg  text-gray-600 ">
                     Explore frontend, backend, database, and tooling options,
                     compare them side by side, and put together the stack that fits your
                     next project.
