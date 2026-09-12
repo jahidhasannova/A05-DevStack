@@ -4,7 +4,7 @@ import type { ITechnology } from '../../types/technologyType';
 import AvailableTechnologies from './AvailableTechnologies';
 
 interface TechnologySectionProps {
-    TechnologyPromise: promises<ITechnology[]>
+    TechnologyPromise: Promise<ITechnology[]>
 }
 
 const TechnologySection = ({ TechnologyPromise }: TechnologySectionProps) => {
