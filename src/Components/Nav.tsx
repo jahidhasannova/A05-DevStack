@@ -2,7 +2,7 @@ import Logo from "../assets/logo-text.png";
 
 function Nav() {
     return (
-        <nav className="bg-gray-50">
+        <nav className="bg-gray-50 fixed top-0 left-0 w-full z-50 border-b-2 border-gray-100">
             <div className="container mx-auto flex items-center justify-between py-4">
 
                 
