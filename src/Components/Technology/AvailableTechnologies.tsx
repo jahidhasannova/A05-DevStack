@@ -30,19 +30,19 @@ const AvailableTechnologies = ({
 
           const handleAddTechnology = () => {
 
-            if (isTechnologySelected) {
-              toast.warning(
-                `${Technology.name} is already in your stack.`,
-                {
-                  position: "top-center",
-                  autoClose: 3000,
-                  theme: "colored",
-                  transition: Bounce,
-                },
-              );
+            // if (isTechnologySelected) {
+            //   toast.warning(
+            //     `${Technology.name} is already in your stack.`,
+            //     {
+            //       position: "top-center",
+            //       autoClose: 3000,
+            //       theme: "colored",
+            //       transition: Bounce,
+            //     },
+            //   );
 
-              return;
-            }
+            //   return;
+            // }
 
             setSelectedTechnologies([
               ...selectedTechnologies,
@@ -52,7 +52,7 @@ const AvailableTechnologies = ({
             toast.success(
               `${Technology.name} added to stack successfully!`,
               {
-                position: "top-center",
+                position: "bottom-right",
                 autoClose: 3000,
                 theme: "colored",
                 transition: Bounce,

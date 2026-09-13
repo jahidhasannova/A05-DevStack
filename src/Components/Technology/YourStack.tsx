@@ -20,7 +20,7 @@ const YourStack = ({
     setSelectedTechnologies(remainingTechnologies);
 
     toast.warning(`${Technology.name} removed from your stack.`, {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 3000,
       theme: "colored",
       transition: Bounce,
@@ -31,7 +31,7 @@ const YourStack = ({
     setSelectedTechnologies([]);
 
     toast.error("All technologies have been removed from your stack.", {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 3000,
       theme: "colored",
       transition: Bounce,

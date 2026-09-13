@@ -6,9 +6,7 @@ interface TechnologySectionProps {
   TechnologyPromise: Promise<ITechnology[]>;
 }
 
-const TechnologySection = ({
-  TechnologyPromise,
-}: TechnologySectionProps) => {
+const TechnologySection = ({ TechnologyPromise }: TechnologySectionProps) => {
   const TechnologySection = use(TechnologyPromise);
 
   const [selectedTechnologies, setSelectedTechnologies] = useState<
@@ -16,16 +14,10 @@ const TechnologySection = ({
   >([]);
 
   return (
-    <div
-      id="technologies"
-      className="container mx-auto px-4"
-    >
-      <div className="mb-8">
+    <div id="technologies" className="container mx-auto px-4">
+      <div className="mb-8 text-center lg:text-left">
         <h2 className="text-3xl lg:text-4xl font-bold">
-          Explore the{" "}
-          <span className="gradient-text">
-            Technologies
-          </span>
+          Explore <span className="gradient-text">Technologies</span>
         </h2>
 
         <p className="mt-3 text-sm text-gray-400">

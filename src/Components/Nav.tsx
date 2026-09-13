@@ -7,7 +7,7 @@ function Nav() {
             <div className="container mx-auto px-4 flex items-center justify-between py-3 lg:py-4">
 
                 {/* Mobile Menu */}
-                <button className="lg:hidden text-2xl cursor-pointer">
+                <button className="lg:hidden text-2xl cursor-pointer hover:text-[#9C2FC7]">
                     <IoMenu />
                 </button>
 
