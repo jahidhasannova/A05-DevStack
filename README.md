@@ -1,23 +1,23 @@
-# Dev Stack Builder
+# 🚀 Dev Stack Builder
 
 Dev Stack Builder is a simple web application where users can explore different technologies and select technologies to build their own development stack.
 
-## Technologies I Used
+## 🛠️ Technologies I Used
 
-* React
-* TypeScript
-* Tailwind CSS
-* React-Toastify
-* Vite
-* JSON
+* ⚛️ React
+* 🔷 TypeScript
+* 🎨 Tailwind CSS
+* 🔔 React-Toastify
+* ⚡ Vite
+* 📄 JSON
 
-## Features
+## ✨ Features
 
-* Users can explore different technologies with their details.
-* Users can add and remove technologies from their stack.
-* Toast notifications show when technologies are added or removed.
+* 🔍 Users can explore different technologies with their details.
+* ➕ Users can add and remove technologies from their stack.
+* 🔔 Toast notifications show when technologies are added or removed.
 
-## React Questions & Answers
+## 📚 React Questions & Answers
 
 ### 1. What is JSX, and why is it used in React?
 
