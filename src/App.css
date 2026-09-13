@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --main-gradient: linear-gradient(
+    to right,
+    #f97316,
+    #ec4899,
+    #8b5cf6
+  );
+}
+
+.gradient-text {
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-button {
+  background: var(--main-gradient);
+  color: white;
+}
+
+.gradient-button:hover {
+  opacity: 0.9;
+}

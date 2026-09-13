@@ -1,49 +1,50 @@
-import BannerImage from '../assets/banner-stack.png';
+import BannerImage from "../assets/banner-stack.png";
 
 function Banner() {
-    return (
-        <div className="container mx-auto flex items-center justify-between gap-10 py-20">
+  return (
+    <div
+      id="home"
+      className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10 pt-20 pb-16 lg:py-20"
+    >
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
 
-            {/* Banner Content */}
-            <div>
-                <h2 className="mb-8 text-7xl font-bold ">
-                    Build Your Ideal <br />
-                    <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
-                        Development Stack
-                    </span>
-                </h2>
+        <h2 className="mb-8 text-4xl sm:text-5xl lg:text-7xl font-bold">
+          <span className="whitespace-nowrap">
+            Build Your Ideal
+          </span>
+          <br />
+          <span className="gradient-text">
+            Development Stack
+          </span>
+        </h2>
 
-                <p className="mt-10 mb-14 max-w-lg text-lg  text-gray-600 ">
-                    Explore frontend, backend, database, and tooling options,
-                    compare them side by side, and put together the stack that fits your
-                    next project.
-                </p>
+        <p className="mt-10 mb-14 mx-auto lg:mx-0 max-w-[340px] sm:max-w-lg text-base lg:text-lg text-gray-600">
+          Explore frontend, backend, database, and tooling options, compare
+          them side by side, and put together the stack that fits your next
+          project.
+        </p>
 
-                {/* Banner Button */}
-                <div className="flex gap-4">
-                    <button
-                        className="btn h-10 w-52 rounded-xl bg-white font-medium text-gray-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 hover:text-white"
-                    >
-                        Explore Technologies
-                    </button>
+        <div className="flex flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
 
-                    <button
-                        className="btn h-10 w-52 rounded-xl bg-white font-medium  text-gray-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 hover:text-white"
-                    >
-                        Learn More
-                    </button>
-                </div>
-            </div>
+          <button className="gradient-button h-11 w-1/2 sm:w-52 rounded-xl font-medium cursor-pointer">
+            Explore Technologies
+          </button>
 
-            {/* Banner Image */}
-            <img
-                src={BannerImage}
-                alt="Development Stack"
-                className="w-1/2 max-w-lg"
-            />
+          <button className="h-11 w-1/2 sm:w-52 rounded-xl border border-pink-500 font-medium text-pink-500 hover:bg-pink-50 cursor-pointer">
+            Learn More
+          </button>
 
         </div>
-    );
+      </div>
+
+      <img
+        src={BannerImage}
+        alt="Development Stack"
+        className="w-full lg:w-1/2 max-w-lg"
+      />
+    </div>
+  );
 }
 
 export default Banner;
+

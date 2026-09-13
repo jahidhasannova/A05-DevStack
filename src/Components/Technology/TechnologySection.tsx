@@ -1,41 +1,45 @@
-import type { promises } from 'dns';
-import { use } from 'react';
-import type { ITechnology } from '../../types/technologyType';
-import AvailableTechnologies from './AvailableTechnologies';
+import { use, useState } from "react";
+import type { ITechnology } from "../../types/technologyType";
+import AvailableTechnologies from "./AvailableTechnologies";
 
 interface TechnologySectionProps {
-    TechnologyPromise: Promise<ITechnology[]>
+  TechnologyPromise: Promise<ITechnology[]>;
 }
 
-const TechnologySection = ({ TechnologyPromise }: TechnologySectionProps) => {
+const TechnologySection = ({
+  TechnologyPromise,
+}: TechnologySectionProps) => {
+  const TechnologySection = use(TechnologyPromise);
 
-    console.log(TechnologyPromise);
+  const [selectedTechnologies, setSelectedTechnologies] = useState<
+    ITechnology[]
+  >([]);
 
-    const TechnologySection = use(TechnologyPromise);
+  return (
+    <div
+      id="technologies"
+      className="container mx-auto px-4"
+    >
+      <div className="mb-8">
+        <h2 className="text-3xl lg:text-4xl font-bold">
+          Explore the{" "}
+          <span className="gradient-text">
+            Technologies
+          </span>
+        </h2>
 
-    console.log(TechnologySection);
+        <p className="mt-3 text-sm text-gray-400">
+          Pick technologies to build your ideal development stack.
+        </p>
+      </div>
 
-    return (
-        <div className="container mx-auto ">
-
-            {/* Text: Explore the Technologies*/}
-            <div className="mb-8">
-
-                <h2 className="text-4xl font-bold">
-                    Explore the{" "}
-                    <span className=" text-pink-500">
-                        Technologies
-                    </span>
-                </h2>
-
-                <p className="mt-3 text-sm text-gray-400">
-                    Pick one technology per category to build your ideal stack.
-                </p>
-            </div>
-
-            <AvailableTechnologies TechnologySection={TechnologySection}></AvailableTechnologies>
-        </div>
-    );
-}
+      <AvailableTechnologies
+        TechnologySection={TechnologySection}
+        selectedTechnologies={selectedTechnologies}
+        setSelectedTechnologies={setSelectedTechnologies}
+      ></AvailableTechnologies>
+    </div>
+  );
+};
 
 export default TechnologySection;
