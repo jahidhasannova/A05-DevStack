@@ -4,8 +4,6 @@
 
 Dev Stack Builder is a simple web application where users can explore different technologies and select technologies to build their own development stack.
 
-Dev Stack Builder is a simple web application where users can explore different technologies and select technologies to build their own development stack.
-
 ## 🛠️ Technologies I Used
 
 * ⚛️ React
