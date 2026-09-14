@@ -20,7 +20,7 @@ function Nav() {
 
                 {/* Desktop Menu */}
                 <ul className="hidden lg:flex items-center gap-6">
-                    <li className="cursor-pointer transition hover:text-pink-500">
+                    <li className="cursor-pointer text-pink-500 transition">
                         Home
                     </li>
                     <li className="cursor-pointer transition hover:text-pink-500">
